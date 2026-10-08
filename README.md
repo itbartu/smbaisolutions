@@ -23,3 +23,12 @@ No payments, domains, subscriptions, lead scraping or backend automation are imp
 
 ## V2 branding
 The redesigned wordmark follows the provided stacked SMB / AI Solutions reference, with a refined sans-serif style and a restrained teal highlight. `logo.svg` is provided as a standalone scalable logo. `favicon.svg` is a compact square treatment. Site colours and typography are controlled in `styles.css`.
+
+
+## Contact form and Sora AI phone agent (v3)
+- Public business email: sales@smbaisolutions.com
+- Phone / AI agent Sora: +1 (754) 219-2377 (click-to-call). No embedded live voice chat is claimed; calling uses the phone system you already operate.
+- The contact form submits asynchronously (fetch) to FormSubmit's AJAX endpoint for sales@smbaisolutions.com and displays success/error inline; it does NOT open a mail application.
+- IMPORTANT: Before this works in production, submit a test enquiry and **confirm/activate the email sent by FormSubmit** to sales@smbaisolutions.com. Check spam. Delivery is contingent on their service and this verification.
+- Form data is processed by the third-party FormSubmit service. Publish privacy terms reflecting this, and consider switching to your own backend in a future phase for greater control, abuse prevention, and auditability.
+- Ensure the mailbox is receiving mail. Test the public page once deployed.
