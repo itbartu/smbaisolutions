@@ -32,3 +32,9 @@ The redesigned wordmark follows the provided stacked SMB / AI Solutions referenc
 - IMPORTANT: Before this works in production, submit a test enquiry and **confirm/activate the email sent by FormSubmit** to sales@smbaisolutions.com. Check spam. Delivery is contingent on their service and this verification.
 - Form data is processed by the third-party FormSubmit service. Publish privacy terms reflecting this, and consider switching to your own backend in a future phase for greater control, abuse prevention, and auditability.
 - Ensure the mailbox is receiving mail. Test the public page once deployed.
+
+
+## Clean URLs on GitHub Pages
+The homepage is served from / and the other pages from /about/, /contact/, /how-it-works/, and /pricing/. Edit those pages in their respective folders (for example, about/index.html). The original root-level .html pages are retained to redirect old links; the homepage also redirects /index.html to /. JavaScript redirects preserve query strings and anchors. GitHub Pages uses directory index files, so inner page URLs include a trailing slash.
+
+Publish the page folders along with the root files. Links and assets use root-relative paths for smbaisolutions.com. Preview through a web server rooted in this folder rather than opening files directly.
